@@ -5190,6 +5190,7 @@ button.close {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  margin-left: 390px;
 }
 a.close.disabled {
   pointer-events: none;
@@ -5358,8 +5359,7 @@ a.close.disabled {
   border-top-right-radius: 0.3rem;
 }
 .modal-header .close {
-  padding: 1rem 1rem;
-  margin: -1rem -1rem -1rem auto;
+  padding: 0.1rem 0.1rem;
 }
 .modal-title {
   margin-bottom: 0;

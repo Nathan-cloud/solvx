@@ -754,7 +754,12 @@ th,
 td {
   border: 1px solid #eee;
 }
-
+.text-dark-blue {
+  color: #2953a4;
+}
+.text-dark-blue:hover {
+  color: #fff;
+}
 th {
   font-weight: 700;
 }
