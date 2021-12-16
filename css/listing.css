@@ -1,0 +1,820 @@
+/* 
+Superio | Just another HTML Template
+
+Template Name: Superio
+Author: Creative Layers
+Version: 1.0.0
+
+/************ TABLE OF CONTENTS ***************
+1. Fonts
+2. Reset
+3. Global
+4. Content Elements 
+5. Main Header / Two / Three / Four / Five
+6. Sticky Header
+7. Mobile Header
+8. Login Popup
+9. Page Title
+10. Section Title
+11. Banner Section / One to Ten
+12. Work Section
+13. Job Categories
+14. Job Section / Two / Three / Four / Five / Six
+15. Job Detail Section / Style two
+16. Features Section
+17. Testimonial Section / Two / Three / Four
+18. Clients Section / Two
+19. About Section / Two / Three
+20. Fun Fact Section
+21. Recruiter Section 
+22. Jobseeker Section
+23. Candidates Section / Two
+24. Candidate Detail Section
+25. Listing Section 
+26. Listing Show More
+27. Listing Pagination
+28. Listing Section Two / Three / Four
+29. Listing Maps
+30. Top Companies
+31. Ads Section
+32. Registeration Banners
+33. News Section / Two / Three
+34. Blog Grid
+35. Blog Single
+36. Products Section
+37. Shop Single
+38. Product Tabs
+39. Cart Section
+40. CheckOut Page
+41. Order Slip
+42. App Section
+43. Pricing Section
+44. Process Section
+45. steps Section
+46. Call To Action / Two / Three / Four
+47. Browse Jobs
+48. Subscribe Section / Two
+49. Faqs Section
+50. TNC Section
+51. Map Section
+52. Contact Section
+53. Login Section
+54. Invoice Section
+55. Main Footer / Two / Three / Four / Five / Six
+56. Dashboard
+57. User Sidebar
+58. Chat Widget
+**********************************************/
+
+ul,
+li {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+/*** 
+
+====================================================================
+Content Elements
+====================================================================
+
+
+
+/*======================
+Switches 
+=======================*/
+
+.switchbox-outer {
+  position: relative;
+}
+
+.switchbox-outer h4 {
+  font-size: 16px;
+  line-height: 1em;
+  color: #1b2032;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.switchbox {
+  position: relative;
+}
+
+.switchbox li {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.switchbox .title {
+  position: relative;
+  margin-left: 10px;
+  font-size: 15px;
+  color: #5c6770;
+  line-height: 20px;
+}
+
+.switch {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: relative;
+  cursor: pointer;
+  width: 40px;
+  height: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ecedf2;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 10px;
+  width: 10px;
+  left: 4px;
+  bottom: 3px;
+  background-color: #d2d3d8;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #1967d2;
+  border: 2px solid #1967d2;
+}
+
+input:checked + .slider:before {
+  background: #ffffff;
+  -webkit-transform: translateX(18px);
+  -ms-transform: translateX(19px);
+  transform: translateX(19px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/***
+
+====================================================================
+Listing Section  (Ls Section) 
+====================================================================
+
+***/
+
+.ls-section {
+  position: relative;
+  padding: 50px 0 100px;
+}
+
+.ls-section .content-column .upper-box {
+  position: relative;
+  padding: 20px 30px;
+}
+
+.ls-section .filters-backdrop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 1000%;
+  background: #1b2032;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.active-filters .ls-section .filters-backdrop {
+  opacity: 0.8;
+  visibility: visible;
+}
+
+.ls-section .filters-column.hide-left {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh !important;
+  max-width: 320px;
+  width: 100%;
+  padding: 0 !important;
+  background: #fff;
+  z-index: 99;
+  overflow-y: auto !important;
+  -webkit-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+
+.ls-section .filters-column.hide-left .inner-column {
+  min-height: 100%;
+}
+
+.ls-section .filters-column::-webkit-scrollbar {
+  width: 5px;
+}
+.ls-section .filters-column::-webkit-scrollbar-track {
+  background: transparent;
+}
+.ls-section .filters-column::-webkit-scrollbar-thumb {
+  background-color: rgba(112, 112, 112, 0.5);
+  border-radius: 10px;
+}
+
+.ls-section .filters-column.hide-left .filters-outer {
+  margin-bottom: 0;
+}
+
+.active-filters .ls-section .filters-column.hide-left {
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.ls-section .toggle-filters {
+  position: relative;
+  display: none;
+}
+
+.ls-section .toggle-filters .icon {
+  display: inline-block;
+  height: 10px;
+  width: 14px;
+  background-image: url(../images/icons/filter.svg);
+}
+
+.ls-section .toggle-filters.show {
+  display: block;
+}
+
+.ls-section .sort-by.show-filters {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.ls-section .sort-by.show-filters .chosen-select {
+  width: auto;
+}
+
+.ls-section .show-filters .toggle-filters {
+  position: relative;
+  font-size: 14px;
+  line-height: 25px;
+  padding: 10px 30px;
+  border-radius: 8px;
+  color: #1967d2;
+  background: rgba(25, 103, 210, 0.07);
+  white-space: nowrap;
+  margin-right: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.ls-section .show-filters .toggle-filters span {
+  margin-right: 10px;
+}
+
+.ls-section .filters-column .inner-column.pd-right {
+  padding-right: 20px;
+}
+.bg-purple {
+  background: #2953a4;
+}
+
+.ls-section .filters-outer {
+  position: relative;
+  background: #fff;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  padding: 30px 30px 10px;
+}
+
+.ls-section .close-filters {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 25px;
+  min-width: auto;
+  height: 25px;
+  border: 1px solid #333;
+  border-radius: 50%;
+  color: #000;
+  line-height: 25px;
+  font-size: 12px;
+  z-index: 99;
+  display: none;
+}
+
+.ls-section .filter-block {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.ls-section h4 {
+  position: relative;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #202124;
+  margin-bottom: 16px;
+}
+
+.ls-section .filter-block p {
+  position: relative;
+  font-size: 14px;
+  line-height: 19px;
+  color: #696969;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.ls-section .filter-block .form-group {
+  position: relative;
+  margin-bottom: 0;
+}
+
+.chosen-container .chosen-drop {
+  border: 1px solid #ecedf2;
+}
+
+.ls-section .filter-block .chosen-container .chosen-drop {
+  background: #ffffff;
+}
+
+.ls-section .filter-block .chosen-container .chosen-single,
+.ls-section .filter-block input,
+.ls-section .filter-block select,
+.ls-section .filter-block textarea {
+  width: 100%;
+  height: 60px;
+  padding: 14px 20px;
+  padding-left: 54px;
+  line-height: 30px;
+  font-size: 15px;
+  color: #696969;
+  background: #ffffff;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: 1px solid #ecedf2;
+  border-radius: 8px;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.ls-section .filter-block input:focus {
+  border-color: #1967d2;
+}
+
+.ls-section .filter-block .icon {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  margin-top: -15px;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.ls-section .switchbox-outer {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+/* Range Slider widget */
+
+.rangeslider-widget {
+  position: relative;
+}
+
+.range-slider-one {
+  position: relative;
+  min-height: 48px;
+  padding-top: 10px;
+}
+
+.range-slider-one .ui-widget.ui-widget-content {
+  height: 5px;
+  border: none;
+  margin-bottom: 20px;
+  border-radius: 30px;
+  background: #d4e1f6;
+}
+
+.range-slider-one .ui-slider .ui-slider-range {
+  top: 0px;
+  height: 5px;
+  background: #1967d2;
+}
+.filter-top-header {
+  background: #2953a4;
+  margin-bottom: 10px;
+  padding: 8px 10px 1px 20px;
+  border-radius: 8px;
+  color: #fff;
+}
+.range-slider-one .ui-state-default,
+.range-slider-one .ui-widget-content .ui-state-default {
+  position: absolute;
+  top: 3px;
+  width: 17px;
+  height: 17px;
+  background: #ffffff;
+  border: 2px solid #1967d2;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.range-slider-one .input-outer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.range-slider-one .amount-outer {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-width: 70px;
+  padding: 0 10px;
+  height: 30px;
+  text-align: center;
+  background: #d4e1f6;
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 19px;
+  color: #1967d2;
+}
+
+.range-slider-one .amount {
+  margin-right: 5px;
+}
+
+.range-slider-one .ui-state-default:last-child {
+  display: block !important;
+}
+
+.range-slider-one.salary-range .ui-state-default {
+  display: block !important;
+}
+
+/* Range Slider widget */
+
+.tags-style-one {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.tags-style-one li {
+  position: relative;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.tags-style-one li a {
+  position: relative;
+  background: #ffffff;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #696969;
+  padding: 5px 20px;
+}
+
+.tags-style-one li a:hover {
+  background: #d4e1f6;
+  color: #1967d2;
+}
+
+.ls-section .call-to-action .image-column {
+  background-size: 100%;
+  width: 50%;
+}
+
+/*=====================
+Ls Outer
+======================*/
+
+.ls-section .ls-outer {
+  position: relative;
+}
+
+.ls-switcher {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.ls-switcher .showing-result {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.ls-switcher .showing-result .text {
+  font-size: 16px;
+  color: #1b2032;
+}
+
+.ls-switcher .arrange {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 20px;
+}
+
+.ls-switcher .arrange a {
+  margin-right: 10px;
+}
+
+.ls-switcher .arrange .icon {
+  position: relative;
+  display: block;
+  height: 40px;
+  width: 40px;
+  border: 2px solid #d7dbe4;
+  border-radius: 50%;
+  line-height: 36px;
+  text-align: center;
+  color: #a3acc2;
+  font-size: 16px;
+}
+
+.ls-switcher .arrange .active .icon {
+  color: #a3acc2;
+  border-color: #a3acc2;
+}
+
+.top-filters {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.top-filters .form-group {
+  position: relative;
+  margin-right: 20px;
+  margin-bottom: 0;
+}
+
+.top-filters .chosen-container .chosen-single {
+  position: relative;
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  line-height: 25px;
+  padding: 10px 22px;
+  padding-right: 44px;
+  color: #1967d2;
+  background: rgba(25, 103, 210, 0.07);
+  white-space: nowrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.top-filters .chosen-container-single .chosen-single div:after {
+  color: #1967d2;
+  content: "\f17c";
+  font-family: "Flaticon";
+  font-size: 10px;
+}
+
+.top-filters .chosen-container .chosen-single span {
+  color: #1967d2;
+  margin: 0;
+  min-width: auto;
+}
+
+.top-filters .chosen-container .chosen-container-multi .chosen-choices,
+.top-filters .chosen-container.chosen-with-drop .chosen-drop {
+  background: #eff4fc;
+}
+
+.ls-switcher .sort-by {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.ls-switcher .sort-by .chosen-single {
+  position: relative;
+  height: 45px;
+  padding: 10px 20px;
+  font-size: 14px;
+  color: #696969;
+  line-height: 25px;
+  background: #f0f5f7;
+}
+
+.ls-switcher .sort-by .chosen-container {
+  margin-left: 10px;
+}
+
+.ls-switcher .sort-by .chosen-container-single .chosen-single div:after {
+  color: #696969;
+  content: "\f17c";
+  font-family: "Flaticon";
+  font-size: 10px;
+}
+
+.ls-switcher .showing-result {
+  position: relative;
+}
+
+.ls-switcher .showing-result .text {
+  position: relative;
+  font-size: 15px;
+  line-height: 20px;
+  color: #696969;
+}
+
+.ls-switcher .showing-result .text strong {
+  font-weight: 500;
+  color: #202124;
+}
+.search-submit {
+  background: #fff;
+}
+
+/*==========================
+Accordian Box
+===========================*/
+
+.accordion-box {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.accordion-box .block {
+  position: relative;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #ecedf2;
+  -webkit-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.accordion-box .block .acc-btn {
+  position: relative;
+  font-size: 16px;
+  padding: 17px 30px;
+  line-height: 30px;
+  color: #202124;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  -webkit-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.accordion-box .block.active-block {
+  -webkit-box-shadow: 0px 6px 15px rgba(64, 79, 104, 0.05);
+  box-shadow: 0px 6px 15px rgba(64, 79, 104, 0.05);
+}
+
+.accordion-box .block .acc-btn .icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 70px;
+  width: 70px;
+  line-height: 70px;
+  text-align: center;
+  color: #2f2d51;
+  font-size: 15px;
+  font-weight: 700;
+  -webkit-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.accordion-box .block .acc-btn.active .icon:before {
+  content: "\f109";
+}
+
+.accordion-box .block .acc-content {
+  position: relative;
+  display: none;
+}
+
+.accordion-box .block .acc-content.current {
+  display: block;
+}
+
+.accordion-box .block .content {
+  position: relative;
+  padding: 24px 30px 26px;
+  border-top: 1px solid #ecedf2;
+}
+
+.accordion-box .block .content p {
+  position: relative;
+  font-size: 15px;
+  line-height: 24px;
+  color: #696969;
+  font-weight: 400;
+  margin-bottom: 24px;
+  -webkit-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.accordion-box .block .content p:last-child {
+  margin-bottom: 0;
+}

@@ -335,6 +335,7 @@ textarea {
   font-weight: 400;
   -ms-word-wrap: break-word;
   word-wrap: break-word;
+  width: 100%;
   box-sizing: border-box;
 }
 h1,
@@ -3206,26 +3207,27 @@ a:active {
 
 .search-form {
   position: relative;
+  width: 107%;
+  margin-left: -25px;
 }
 .search-form .search-field {
   width: 100%;
-  padding: 0 66px 0 20px;
+  padding: 0 66px 0 80px;
   height: 46px;
-  line-height: 1;
-  border-color: #e6e6e6;
+  background-color: #fff;
 }
 .search-form .search-submit {
   border: none;
   position: absolute;
-  top: 0;
-  right: 0;
+
   height: 100%;
   width: 46px;
   outline: none;
   text-align: center;
+  border-radius: 8px 1px 0px 8px;
   vertical-align: middle;
   color: #b5b5b5;
-  background: #43baff;
+  background: #2953a4;
   transition: all 0.3s linear;
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
@@ -4726,15 +4728,20 @@ object {
   font-size: 10px;
   color: #b6b6b6;
 }
+.ot-accordions .acc-item .acc-toggle .active {
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px black;
+}
 .ot-accordions .acc-item .acc-toggle i.up {
   display: none;
 }
 .ot-accordions .acc-item .acc-toggle i:before {
   font-size: 14px;
 }
-.ot-accordions .acc-item .acc-toggle:hover {
+/* .ot-accordions .acc-item .acc-toggle:hover {
   color: #43baff;
-}
+} */
 .ot-accordions .acc-item .acc-content {
   display: none;
   padding: 20px 20px 0;
@@ -4743,14 +4750,26 @@ object {
 .ot-accordions .acc-item .acc-content ul:last-child {
   margin-bottom: 0;
 }
+.bg-btn-dark {
+  background: #2953a4;
+  border: 1px solid #2953a4;
+}
+.bg-btn-dark:hover {
+  background: #2953a4;
+}
+
 .ot-accordions .acc-item.current {
-  border-radius: 25px;
-  -webkit-border-radius: 25px;
-  -moz-border-radius: 25px;
+  border-radius: 2px;
+}
+.ot-accordions .acc-item.acc-toggle .ot-button {
+  background: #2953a4;
 }
 .ot-accordions .acc-item.current .acc-toggle {
-  color: #43baff;
+  /* color: #43baff; */
   background-color: #fff;
+}
+.ot-accordions .acc-item.current .acc-toggle span {
+  display: none;
 }
 .ot-accordions .acc-item.current .acc-toggle i {
   color: #43baff;
