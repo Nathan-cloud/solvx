@@ -1,23 +1,10 @@
 .one {
   /* background-color: #ffcfdf;
   background-image: linear-gradient(315deg, #ffcfdf 0%, #b0f3f1 74%); */
-  padding: 120px 0;
+  padding: 10px 0;
   position: relative;
   height: 100vh;
   font-family: "Poppins", sans-serif;
-}
-
-.map-img {
-  position: absolute;
-  top: 50%;
-  left: 10%;
-  transform: translateY(-50%);
-  animation-name: mapMover;
-  animation-duration: 5s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  transition: all 0.4s ease;
-  transform-origin: center center;
 }
 
 @keyframes mapMover {
@@ -66,7 +53,7 @@
   padding: 0;
   margin: 0;
 }
-
+/* 
 #testimonials-slider-pager {
   width: 391px;
   height: 391px;
@@ -81,7 +68,7 @@
   animation-iteration-count: infinite;
   transition: all 0.4s ease;
   transform-origin: center center;
-}
+} */
 
 @keyframes tesiMove {
   0% {
@@ -100,43 +87,38 @@
     transform: rotate(0deg);
   }
 }
-
+.pager-one {
+  padding-bottom: 30px;
+}
 .pager-one .pager-item {
-  width: 71px;
-  height: 71px;
+  width: 100px;
+  height: 100px;
   display: inline-block;
-  vertical-align: middle;
-  position: absolute;
+  margin: 60px;
+  border: 4px solid #e0e0e0;
+  border-radius: 50%;
 }
 
 .pager-item:nth-child(1) {
-  top: 55px;
-  left: -10px;
 }
 
 .pager-item:nth-child(2) {
-  top: 55px;
-  right: -10px;
+  position: relative;
+  top: 100px;
 }
 
 #testimonials-slider-pager .pager-one .pager-item:nth-child(3) {
-  bottom: 55px;
-  left: -10px;
 }
 #testimonials-slider-pager .pager-one .pager-item:nth-child(4) {
-  bottom: 55px;
-  right: -10px;
+  position: relative;
+  top: 50px;
 }
 #testimonials-slider-pager .pager-one .pager-item:nth-child(5) {
-  bottom: -40px;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
 #testimonials-slider-pager .pager-one .pager-item:nth-child(6) {
-  top: -40px;
-  left: 50%;
-  transform: translateX(-50%);
+  position: relative;
+  top: 50px;
 }
 
 #testimonials-slider-pager .pager-one .pager-item > img {
@@ -145,29 +127,23 @@
   transition: all 0.4s ease;
 }
 
-#testimonials-slider-pager .pager-one .pager-item.active img {
-  opacity: 0.75;
-  transform: scale(0.95);
+#testimonials-slider-pager .pager-one .pager-item.active img .owl-item.active {
+  border: 4px solid #3b71e8;
+  border-radius: 50%;
 }
 
-#testimonials-slider-pager .pager-two .pager-item {
-  width: 163px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0);
-  opacity: 0;
-  transition: all 0.4s ease;
+.pager-two {
+  margin-left: 50px;
+  margin-top: 30px;
+
+  border-radius: 5px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  padding: 20px 40px 40px 40px;
 }
 
 #testimonials-slider-pager .pager-two .pager-item.active {
   opacity: 1;
   transform: translate(-50%, -50%) scale(0.95);
-}
-
-#testimonials-slider-pager .pager-two .pager-item > img {
-  width: 100%;
-  border-radius: 50%;
 }
 
 .bx-controls-direction {

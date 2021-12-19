@@ -6184,6 +6184,7 @@ button.bg-dark:hover {
   }
 }
 @media (min-width: 768px) {
+ 
   .d-md-none {
     display: none !important;
   }
@@ -7331,6 +7332,9 @@ button.bg-dark:hover {
 .ml-5,
 .mx-5 {
   margin-left: 3rem !important;
+}
+.ml-8 {
+  margin-left: 13rem;
 }
 .p-0 {
   padding: 0 !important;

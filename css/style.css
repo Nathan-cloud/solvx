@@ -4726,6 +4726,11 @@ object {
   -o-transition: all 0.3s linear;
   -ms-transition: all 0.3s linear;
 }
+
+.text-gray {
+  color: #465a64;
+  font-size: 14px;
+}
 .ot-accordions .acc-item .acc-toggle i {
   float: right;
   text-align: center;
@@ -4749,7 +4754,7 @@ object {
 } */
 .ot-accordions .acc-item .acc-content {
   display: none;
-  padding: 20px 20px 0;
+  padding: 20px 20px;
 }
 .ot-accordions .acc-item .acc-content p:last-child,
 .ot-accordions .acc-item .acc-content ul:last-child {
@@ -4762,7 +4767,10 @@ object {
 .bg-btn-dark:hover {
   background: #2953a4;
 }
-
+.bolder-purple {
+  border: 4px solid #2953a4;
+  border-radius: 4px;
+}
 .ot-accordions .acc-item.current {
   border-radius: 2px;
 }
@@ -5165,10 +5173,16 @@ object {
   .ot-pricing-table {
     max-width: 470px;
   }
+  .hidden {
+    display: none;
+  }
 }
 @media (max-width: 479px) {
   .ot-pricing-table {
     padding: 33px;
+  }
+  .hidden {
+    display: none;
   }
 
   .ot-pricing-table .inner-table .details {
@@ -5372,7 +5386,9 @@ object {
     top: 15px;
     right: 10px;
   }
-
+  .hidden {
+    display: none;
+  }
   .message-box .content-box p {
     line-height: 1.4;
   }
@@ -7446,6 +7462,9 @@ svg:not(:root) {
   width: 25%;
 }
 @media only screen and (max-width: 993px) {
+  .hidden {
+    display: none;
+  }
   .projects-col4 .project-item {
     width: 50%;
   }
@@ -7596,6 +7615,7 @@ svg:not(:root) {
 }
 .bg-map-dots {
   background-image: url(images/background/bg-maps-dots.jpg);
+  margin-bottom: 300px;
 }
 
 /* HTML */
