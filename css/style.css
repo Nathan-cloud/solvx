@@ -3212,8 +3212,8 @@ a:active {
 
 .search-form {
   position: relative;
-  width: 107%;
-  margin-left: -25px;
+  width: 105%;
+  margin-left: -10px;
 }
 .search-form .search-field {
   width: 100%;
@@ -3515,6 +3515,8 @@ object {
   .ot-heading > span {
     font-size: 12px;
   }
+  
+
 
   .ot-heading h2 {
     font-size: 27px;
@@ -3758,6 +3760,9 @@ object {
   .icon-box-s2.s2 {
     padding-left: 34px;
     padding-right: 34px;
+  }
+  #btn-hidden{
+    display: none;
   }
 }
 @media (max-width: 1024px) {
@@ -5168,6 +5173,9 @@ object {
     max-width: 330px;
     margin: auto;
   }
+  .hidden{
+    display: none;
+  }
 }
 @media (max-width: 767px) {
   .ot-pricing-table {
@@ -5755,6 +5763,12 @@ object {
 @media only screen and (max-width: 1400px) {
   .ot-industries .indus-item .item-inner .i-image {
     left: -50px;
+  }
+}
+@media only screen and (max-width: 1198px) {
+  .hidden{
+    display: none;
+    
   }
 }
 @media only screen and (max-width: 479px) {
