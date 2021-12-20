@@ -7610,6 +7610,16 @@ svg:not(:root) {
 .ft-list-icon .linkedin {
   color: #3292ff;
 }
+.bg-dark-purple {
+  background: #2953a4;
+  position: relative;
+  top: -20px;
+  padding: 1px 10px 1px 15px;
+  border-radius: 5px;
+  margin-top: 90px;
+  margin-bottom: 0;
+}
+}
 .ft-list-icon .instagram {
   color: #ff9000;
 }
