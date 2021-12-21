@@ -22,36 +22,125 @@
   }
 }
 
-.block-title {
-  margin-top: 35px;
-  margin-bottom: 60px;
+.wrapper {
+  position: absolute;
+  top: 90%;
+  margin-top: 7pc;
+  left: 54%;
+  transform: translate(-50%, -50%);
 }
 
-.first p {
-  margin: 0;
-  color: #777b92;
-  font-size: 24px;
-  line-height: 46px;
+.box-container {
+  width: 440px;
+
+  background: #fff;
+  border-radius: 5px;
 }
 
-.first h3 {
-  color: #273167;
-  font-weight: 500;
-  font-size: 20px;
-  margin: 0;
-  margin-top: 40px;
+.img-container {
+  width: 40%;
+  height: 100%;
+  float: left;
+  position: relative;
 }
 
-.first .bx-wrapper {
-  border: none;
-  box-shadow: none;
-  background-color: transparent;
-  margin-bottom: 0;
+.img-container img {
+  width: 80%;
+  height: 70%;
+  border: 6px solid #2953a4;
+  border-radius: 50%;
+  padding-left: 0px;
+  position: relative;
+  top: 12%;
+  left: 20%;
 }
 
-.first .bx-wrapper ul.slider {
-  padding: 0;
-  margin: 0;
+.content {
+  width: 60%;
+  height: 100%;
+  float: left;
+  padding: 30px 40px;
+  box-sizing: border-box;
+}
+
+.head {
+  padding-bottom: 30px;
+  margin-top: -20px;
+}
+
+.head p {
+  font-size: 28px;
+  color: #444444;
+  font-weight: 600;
+}
+
+.head span {
+  color: #aaabaf;
+  font-size: 14px;
+}
+
+.data {
+  width: 100%;
+  overflow: hidden;
+}
+
+.inner-data {
+  width: 100%;
+  float: left;
+  text-align: left;
+  color: #aaabaf;
+}
+
+.inner-data p {
+  font-size: 14px;
+  padding-bottom: 5px;
+}
+
+.inner-data span {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.img-container:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  cursor: pointer;
+  border-top-left-radius: 5px;
+}
+
+.btn {
+  position: absolute;
+  top: 75px;
+
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 6px 30px 6px 30px;
+  color: #fff;
+  font-weight: 600;
+  transition: all 1s ease;
+  cursor: pointer;
+}
+.btn-purple {
+  position: absolute;
+
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 6px 30px 6px 30px;
+  background-color: #2953a4;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 600;
+  transition: all 1s ease;
+  cursor: pointer;
+}
+.btn-purple:hover {
+  color: #fff;
+}
+.border-purple {
+  border: 5px solid #2953a4;
 }
 /* 
 #testimonials-slider-pager {
