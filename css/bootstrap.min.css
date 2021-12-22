@@ -6184,7 +6184,6 @@ button.bg-dark:hover {
   }
 }
 @media (min-width: 768px) {
- 
   .d-md-none {
     display: none !important;
   }
