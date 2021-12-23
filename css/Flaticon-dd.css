@@ -146,8 +146,9 @@ Buttons Styles
   font-size: 15px;
   line-height: 20px;
   border-radius: 8px;
+  border: none;
   font-weight: 400;
-  padding: 12px 55px 15px 45px;
+  padding: 12px 57px 15px 47px;
 }
 .btn-style-one-outline {
   position: relative;
@@ -163,7 +164,7 @@ Buttons Styles
   padding: 12px 55px 15px 45px;
 }
 .ml-10 {
-  margin-left: 15rem;
+  margin-left: 11rem;
 }
 
 /*=== Default Form ===*/
