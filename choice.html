@@ -20,11 +20,14 @@
       type="text/css"
       href="css/settings.css"
     />
-    <!-- REVOLUTION NAVIGATION STYLE -->
 
+  
   </head>
 
-  <body class="">
+  <body class="" style="background:url(./images/bg-choice.png);  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+ ">
     <div id="page" class="site">
       <header id="site-header" class="site-header sticky-header header-static">
         <!-- Main Header start -->
@@ -101,83 +104,29 @@
           </div>
         </div>
       </header>
- <section style="padding-top: 70px;
- padding-bottom: 60px;">
-      <div id="form-container">
-        <div class="wrapper">
-          <div class="title-text">
-            <div class="title login">Welcome Back</div>
-            <div class="title signup">Signup Here</div>
-          </div>
-          <div class="form-container">
-            <div class="slide-controls">
-              <input type="radio" name="slide" id="login" checked />
-              <input type="radio" name="slide" id="signup" />
-              <label for="login" class="slide login">Sign In</label>
-              <label for="signup" class="slide signup">Sign Up</label>
-              <div class="slider-tab"></div>
+
+    <!-- Listing Section -->
+     <section >
+         <div id="choice">
+          <h1 class="text-center mt-n2">Join Us</h1>
+           <div class="container">
+               <div class="choice-btn">
+                   <ul>
+                  <li> <a href="#" class="btn btn-primary">Clients</a></li>
+                   
+                  <li>  <span class="">Our Clients are people who want to hire with us</span></li>
+                    <li>  <a href="#" class="btn btn-outline-primary">Talent</a></li>
+                        <li>  <span class="">Talents are users looking for Career guidance,Internship or job</span></li>
+                        <li>  <a href="#" class="btn btn-outline-primary mb-2">Vacant</a></li>
+                            <li>  <a href="#" class="btn btn-outline-primary mb-2">Training</a></li>
+                                <li> <a href="#" class="btn btn-outline-primary ">Career Guidance</a></li>
+                </ul>
+               </div>
             </div>
-            <div class="form-inner">
-              <form action="#" class="login">
-                <div class="field">
-                  <input
-                    type="text"
-                    placeholder="Email Address /Username"
-                    required
-                  />
-                </div>
-                <div class="field">
-                  <input type="password" placeholder="Password" required />
-                </div>
-                <div class="pass-link">
-                  <a href="#">Forgot password?</a>
-                  <p><b>Get Help</b></p>
-                </div>
-                <div class="field btn-one">
-                  <div class="btn-layer"></div>
-                  <input type="submit" value="Login" />
-                </div>
-                <div class="field-link a">
-                    <a href="#"><i class="fab fa-google fa-1-5x "></i> Google</a>
-                    <a href="#"><i class="fab fa-linkedin-in fa-1-5x"></i> linkedin</a>
-                  </div>
-              </form>
-              <form action="#" class="signup">
-                <div class="field">
-                  <input
-                    type="text"
-                    placeholder="Email Address /Username"
-                    required
-                  />
-                </div>
-                <div class="field">
-                  <input type="password" placeholder="Password" required />
-                </div>
-                <div class="field">
-                  <input
-                    type="password"
-                    placeholder="Confirm password"
-                    required
-                  />
-                </div>
-                <div class="rem-row">
-                  <input type="checkbox" id="rem" />
-                  <label for="rem"> by agreeing this mean that  </label>
-                </div>
-                <div class="field btn-one">
-                  <div class="btn-layer"></div>
-                  <input type="submit" value="Signup" />
-                </div>
-                <div class="field-link a">
-                  <a href="#"><i class="fas fa-google "></i> Google</a>
-                  <a href="#"><i class="fab fa-linkedin-in"></i> linkedin</a>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+           </div>
+     </section>
+    <!--End Listing Page Section -->
+    
     <footer id="site-footer" class="site-footer footer-v1">
       <div class="container">
         <div class="row">
@@ -276,25 +225,59 @@
       </div>
     </footer>
     <!-- #site-footer -->
-    <script>
-        const loginText = document.querySelector(".title-text .login");
-        const loginForm = document.querySelector("form.login");
-        const loginBtn = document.querySelector("label.login");
-        const signupBtn = document.querySelector("label.signup");
-        const signupLink = document.querySelector("form .signup-link a");
-        signupBtn.onclick = () => {
-          loginForm.style.marginLeft = "-50%";
-          loginText.style.marginLeft = "-50%";
-        };
-        loginBtn.onclick = () => {
-          loginForm.style.marginLeft = "0%";
-          loginText.style.marginLeft = "0%";
-        };
-        signupLink.onclick = () => {
-          signupBtn.click();
-          return false;
-        };
-      </script>
+    	<!-- Modal -->
+	<div class="modal right fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+
+				<div class="modal-header" style="background:transparent; border: none;">
+					<button type="button" class="close float-left" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="fa fa-2x">&times;</span></button>
+				
+				</div>
+				<div class="modal-body">
+          <div class="formbg">
+            <div class="formbg-inner padding-horizontal--48">
+              <i>Save Your time while you are applying</i>
+              <span class="padding-bottom--15 mb-5 text-center">Apply with SOLVIT PROFILE</span>
+              <form id="stripe-login">
+                <div class="field padding-bottom--24">
+                  <label for="Name">Name</label>
+                  <input type="text" name="Name">
+                </div>
+                <div class="field padding-bottom--24">
+                  <label for="email">Email</label>
+                  <input type="email" name="email">
+                </div>
+
+                <div class="field padding-bottom--24">
+                  <div class="grid--50-50">
+                    <label for="Addition">Addition Details</label>
+                   
+                  </div>
+                  <input type="file" name="cv">
+                </div>
+
+                <div class="field padding-bottom--24">
+                  <div class="grid--50-50">
+                    <label for="Addition">Addition Details</label>
+                   
+                  </div>
+                  <input type="text" name="Details">
+                </div>
+             
+                <div class="field padding-bottom--24">
+                  <input type="submit" name="submit" value="Continue">
+                </div>
+              
+              </form>
+            </div>
+          </div>
+				</div>
+
+			</div><!-- modal-content -->
+		</div><!-- modal-dialog -->
+	</div><!-- modal -->
+
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/boot.js"></script>

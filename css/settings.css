@@ -4,12 +4,31 @@
   place-items: center;
 }
 #form-container {
-  width: 650px;
+  width: 620px;
   height: 750px;
-  background: url();
+  background: url(../images/background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   border-radius: 15px;
   margin: auto;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+@media (max-width: 647px) {
+  #form-container {
+    width: auto;
+  }
+}
+@media (max-width: 587px) {
+  .wrapper {
+    margin-left: -40px;
+  }
+}
+@media (max-width: 508px) {
+  .wrapper {
+    width: 450px;
+    margin-left: -50px;
+  }
 }
 .wrapper {
   overflow: hidden;
@@ -20,9 +39,29 @@
   padding: 40px;
   position: relative;
   top: 14%;
-  left: 12%;
+  left: 10.2%;
 }
-
+.fa-1-5x {
+  font-size: 22px;
+}
+.rem-row {
+  padding: 2px;
+  border-top: 1px solid #ccc;
+  line-height: 10px;
+}
+.rem-row > input {
+  width: 17px;
+  height: 17px;
+  border: 1px solid #999;
+  border-radius: 0px;
+  position: relative;
+  top: 3px;
+}
+.rem-row > label {
+  font-size: 15px;
+  margin-left: 5px;
+  cursor: pointer;
+}
 .wrapper .title-text {
   display: flex;
   width: 200%;
@@ -123,7 +162,7 @@ input[type="radio"] {
 }
 .field-link {
   margin-top: 20px;
-  margin-left: 40px;
+  margin-left: 20px;
   height: 50px;
 }
 .field-link a {
@@ -199,4 +238,37 @@ form .btn-one input[type="submit"] {
   font-size: 20px;
   font-weight: 500;
   cursor: pointer;
+}
+#choice {
+  width: 400px;
+  height: 600px;
+  padding: 60px;
+  background: #fff;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 42%);
+  border-radius: 6px;
+  margin: auto;
+}
+.choice-btn {
+  margin-left: -15px;
+}
+.choice-btn ul li {
+  list-style: none;
+  padding: 4px;
+}
+.choice-btn li span {
+  font-size: 11px;
+  text-align: center;
+  font-family: sans-serif;
+}
+.choice-btn .btn-primary {
+  width: 240px;
+  background: #2953a4;
+  border-radius: 4px;
+}
+.choice-btn .btn-outline-primary {
+  width: 240px;
+  border-radius: 4px;
+  border: 2px solid #2953a4;
+  color: #2953a4;
+  background: transparent;
 }
