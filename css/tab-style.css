@@ -1,0 +1,52 @@
+/*****************************/
+/* Top Line */
+/*****************************/
+
+.tabs-style-topline {
+  max-width: 1200px;
+}
+
+.tabs-style-topline nav li:not(:last-child) {
+  border-right: none;
+}
+
+.tabs-style-topline nav li.tab-current {
+  border-bottom-color: #2953a4;
+  border-bottom: 3px solid #2953a4;
+}
+
+.tabs-style-topline nav a {
+  padding: 0.4em 0 0.2em;
+  background: rgba(40, 44, 42, 0.05);
+  color: #2953a4;
+  line-height: 1;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.tabs-style-topline nav a:hover,
+.tabs-style-topline nav a:focus {
+  color: #2953a4;
+  text-decoration: none;
+}
+
+.tabs-style-topline nav li.tab-current a {
+  background: none;
+  color: #2953a4;
+}
+
+.tabs-style-topline .icon::before {
+  display: block;
+  margin: 0;
+}
+
+.tabs-style-topline nav a span {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-size: 0.5em;
+}
+
+/*****************************/
+/* Moving Line */
+/*****************************/

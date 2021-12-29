@@ -1,76 +1,323 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!-- Mirrored from kofejob.dreamguystech.com/template/developer-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 12 Nov 2021 06:48:55 GMT -->
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=0"
+    />
+    <title>KofeJob</title>
+
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/img/favicon.png"
+    />
+
     <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <!-- 
-    <style>
-      .container {
-        max-width: 400px;
-        margin: auto;
-      }
-      .card-border {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 50%;
-        padding: 30px;
-        width: 450px;
-        background: #ccc;
-        color: #000;
-        border-radius: 4px;
-      }
-      .card-border .img-part img {
-        border: 4px solid black;
-        border-radius: 50%;
-        width: 140px;
-      }
-      .card-border .card-content {
-        padding-left: 20px;
-        display: block;
-        margin-top: -30px;
-      }
-      .span-outline {
-        padding: 5px 32px 5px 32px;
-        background: transparent;
-        border: 2px solid black;
-        border-radius: 4px;
-        text-transform: uppercase;
-      }
-      .btn-hire {
-        padding: 5px 32px 5px 32px;
-        background: skyblue;
-        color: #fff;
-        border-radius: 4px;
-        text-transform: uppercase;
-        text-decoration: none;
-      }
-      @media (max-width: 499px) {
-        .card-border {
-          width: 100%;
-        }
-      }
-    </style> -->
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+
+    <link
+      rel="stylesheet"
+      href="assets/plugins/fancybox/jquery.fancybox.min.css"
+    />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <!-- <div class="container">
-      <div class="card-border">
-        <div class="img-part">
-          <img src="images/testi-1-1.jpg" alt="" />
-        </div>
-        <div class="card-content">
-          <h4>John doe</h4>
-          <span class="span-outline">work name</span>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque</p>
-          <a href="#" class="btn-hire">Hire me</a>
+    <div class="main-wrapper">
+      <div class="breadcrumb-bar"></div>
+
+      <div class="content">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-md-12">
+              <div class="pro-view">
+                <nav class="provider-tabs mb-4">
+                  <ul class="nav nav-tabs nav-tabs-solid nav-justified">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#overview">
+                        <i class="fa fa-home fa-2x"></i>
+                        <p class="bg-red">Overview</p>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#project">
+                        <i class="fa fa-home fa-2x"></i>
+                        <p class="bg-blue">Projects</p>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#experience">
+                        <i class="fa fa-home fa-2x"></i>
+                        <p class="bg-violet">Experience</p>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#education">
+                        <i class="fa fa-home fa-2x"></i>
+                        <p class="bg-yellow">Education</p>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#skill">
+                        <i class="fa fa-home fa-2x"></i>
+                        <p class="bg-pink">Skills</p>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+
+                <div class="pro-post project-widget widget-box" id="experience">
+                  <h3 class="pro-title">Experience</h3>
+                  <div class="pro-content">
+                    <div class="widget-list mb-0">
+                      <ul class="clearfix">
+                        <li>
+                          <h4>Logo Designer</h4>
+                          <h5>Techline July 9, 2018 - March 18, 2021</h5>
+                          <p>
+                            I am a professional graphic designer. I have more
+                            than 10-years of experience in graphics design. If
+                            you are looking for any graphic related work,
+                            contact me, I'll glad to help you.
+                          </p>
+                        </li>
+                        <li>
+                          <h4>Logo Designer</h4>
+                          <h5>Techline July 9, 2018 - March 18, 2021</h5>
+                          <p>
+                            I am a professional graphic designer. I have more
+                            than 10-years of experience in graphics design. If
+                            you are looking for any graphic related work,
+                            contact me, I'll glad to help you.
+                          </p>
+                        </li>
+                        <li>
+                          <h4>Logo Designer</h4>
+                          <h5>Techline July 9, 2018 - March 18, 2021</h5>
+                          <p>
+                            I am a professional graphic designer. I have more
+                            than 10-years of experience in graphics design. If
+                            you are looking for any graphic related work,
+                            contact me, I'll glad to help you.
+                          </p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="pro-post project-widget widget-box" id="education">
+                  <h3 class="pro-title">Educational Details</h3>
+                  <div class="pro-content">
+                    <div class="widget-list mb-0">
+                      <ul class="clearfix">
+                        <li>
+                          <h4>
+                            Bachelor of Science in Game Programming &
+                            Development
+                          </h4>
+                          <h5>
+                            Hampshire University January 12, 2015 - January 19,
+                            2019
+                          </h5>
+                          <p>
+                            Graphic Designing artworks through making plans and
+                            utilizing the helpful analysis of companions,
+                            educators, and bosses to improve those plans.
+                            Careful discipline brings about promising results,
+                            and the capacity to acknowledge and gain from
+                            analysis from peers and even the purchaser
+                            everywhere is pivotal for accomplishment in this
+                            field.
+                          </p>
+                        </li>
+                        <li>
+                          <h4>Master in Gaming STudi Design</h4>
+                          <h5>Techline July 9, 2018 - March 18, 2021</h5>
+                          <p>
+                            I am a professional graphic designer. I have more
+                            than 10-years of experience in graphics design. If
+                            you are looking for any graphic related work,
+                            contact me, I'll glad to help you.
+                          </p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="pro-post author-widget clearfix" id="feedback">
+                  <div class="widget-title-box clearfix">
+                    <h3 class="pro-title mb-0">Feedbacks</h3>
+                  </div>
+                  <div class="about-author">
+                    <div class="about-author-img">
+                      <div class="author-img-wrap">
+                        <img
+                          class="img-fluid"
+                          alt=""
+                          src="assets/img/img-03.jpg"
+                        />
+                      </div>
+                    </div>
+                    <div class="author-details">
+                      <a href="#" class="blog-author-name">Logo Designer</a>
+                      <div class="rating">
+                        <span class="average-rating">4.6</span>
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <p class="mb-0">
+                        I am a professional graphic designer. I have more than
+                        10-years of experience in graphics design. If you are
+                        looking for any graphic related work, contact me, I'll
+                        glad to help you.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="about-author">
+                    <div class="about-author-img">
+                      <div class="author-img-wrap">
+                        <img
+                          class="img-fluid"
+                          alt=""
+                          src="assets/img/img-02.jpg"
+                        />
+                      </div>
+                    </div>
+                    <div class="author-details">
+                      <a href="#" class="blog-author-name">Web Designer</a>
+                      <div class="rating">
+                        <span class="average-rating">4.6</span>
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <p class="mb-0">
+                        I am a professional Web designer. I have more than
+                        8-years of experience in Web design. If you are looking
+                        for any Web related work, contact me, I'll glad to help
+                        you.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div> -->
-
-    <div class="container">
-      <div class="content-sidebar">.</div>
     </div>
+
+    <div class="modal fade custom-modal" id="hire">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-modal">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="text-center pt-0 mb-4">
+              <img
+                src="assets/img/logo-01.png"
+                alt="logo"
+                class="img-fluid mb-1"
+              />
+              <h5 class="modal-title">Discuss your project with David</h5>
+            </div>
+            <form
+              action="https://kofejob.dreamguystech.com/template/dashboard.html"
+            >
+              <div class="modal-info">
+                <div class="row">
+                  <div class="col-12 col-md-12">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        name="name"
+                        class="form-control"
+                        placeholder="First name & Lastname"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <input
+                        type="email"
+                        name="name"
+                        class="form-control"
+                        placeholder="Email Address"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        name="name"
+                        class="form-control"
+                        placeholder="Phone Number"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <textarea
+                        class="form-control"
+                        name="message"
+                        rows="5"
+                        placeholder="Message"
+                      ></textarea>
+                    </div>
+                    <div class="form-group row">
+                      <div class="col-12 col-md-4 pr-0">
+                        <label class="file-upload">
+                          Add Attachment <input type="file" />
+                        </label>
+                      </div>
+                      <div class="col-12 col-md-8">
+                        <p class="mb-1">
+                          Allowed file types: zip, pdf, png, jpg
+                        </p>
+                        <p>Max file size: 50 MB</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="submit-section text-center">
+                <button
+                  type="submit"
+                  class="btn btn-primary btn-block submit-btn"
+                >
+                  Hire Now
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/plugins/theia-sticky-sidebar/ResizeSensor.js"></script>
+    <script src="assets/plugins/theia-sticky-sidebar/theia-sticky-sidebar.js"></script>
+
+    <script src="assets/plugins/fancybox/jquery.fancybox.min.js"></script>
+
+    <script src="assets/js/script.js"></script>
   </body>
+
+  <!-- Mirrored from kofejob.dreamguystech.com/template/developer-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 12 Nov 2021 06:49:10 GMT -->
 </html>

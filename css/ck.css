@@ -1,0 +1,244 @@
+@import url("remixicon.css");
+/*---------------------------------------------------------------------
+Profile Edit 
+-----------------------------------------------------------------------*/
+.profile-pic {
+  max-width: 100%;
+  display: block;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+.profile-img-edit {
+  position: relative;
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  margin-bottom: 50px;
+}
+.file-upload {
+  display: none;
+}
+.p-image {
+  position: absolute;
+  top: auto;
+  right: 8px;
+  bottom: 10px;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  background: #2953a4;
+  color: var(--iq-white);
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  line-height: 28px;
+  text-align: center;
+  font-size: 12px;
+  cursor: pointer;
+}
+.upload-button {
+  font-size: 1.5em;
+}
+.iq-edit-profile .nav-link {
+  padding: 10px 20px 10px 20px;
+  border-radius: 0;
+  color: var(--iq-icon-color);
+  text-align: center;
+  font-size: 13px;
+}
+.iq-edit-profile.nav-pills .nav-link.active,
+.iq-edit-profile.nav-pills .show > .nav-link {
+  color: #2953a4;
+  border-bottom: 2px solid #2953a4;
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background: transparent;
+}
+/* ul.iq-edit-profile li:first-child a {
+  border-radius: 15px 0 0 15px;
+  border-left: none;
+}
+ul.iq-edit-profile li:last-child a {
+  border-radius: 0 15px 15px 0;
+} */
+
+:root {
+  --iq-title-text: #303030;
+  --iq-body-text: #a09e9e;
+  --iq-body-bg: #efeefd;
+  --iq-bg-dark-bg: #6d73f6;
+  --iq-bg-light-color: #efeefd;
+  --iq-bg-dark-color: #1d203f;
+  --iq-primary: #827af3;
+  --iq-primary-light: #b47af3;
+  --iq-primary-dark: #6b69d2;
+  --iq-secondary: #a09e9e;
+  --iq-secondary-light: #c1c1c1;
+  --iq-secondary-dark: #7d7d7d;
+  --iq-success: #27b345;
+  --iq-success-light: #45ce62;
+  --iq-success-dark: #3dbb58;
+  --iq-warning: #ffd369;
+  --iq-warning-light: #ffd369;
+  --iq-warning-dark: #fbc647;
+  --iq-danger: #f14336;
+  --iq-danger-light: #fd6256;
+  --iq-danger-dark: #f35448;
+  --iq-info: #6ce6f4;
+  --iq-info-light: #6ce6f4;
+  --iq-info-dark: #67ddea;
+  --iq-dark: #3f414d;
+  --iq-light: #e9edf4;
+  --iq-white: #ffffff;
+  --iq-black: #000000;
+  --iq-cyan: #0cd2e3;
+  --iq-icon-color: #8c91b6;
+  --iq-light-primary: #e0defc;
+  --iq-light-secondary: #f1f2f1;
+  --iq-light-success: #eefff2;
+  --iq-light-danger: #fff5f4;
+  --iq-light-warning: #fffcf3;
+  --iq-light-info: #e5fafc;
+  --iq-light-dark: #f0efef;
+  --iq-cobalt-blue: #3f79f1;
+  --iq-spring-green: #1be1b3;
+  --iq-amber: #f4b72a;
+  --iq-pink: #fd6c9e;
+  --iq-blue-dark: #5a61fd;
+  --iq-blue-light: #858afb;
+  --iq-color-light: #edf3ff;
+  --iq-progress-light: #eef1f7;
+  --iq-light-border: #f2edff;
+  --iq-dark-border: #d7dbda;
+}
+
+/*---------------------------------------------------------------------
+General
+-----------------------------------------------------------------------*/
+
+body {
+  font-family: "Muli", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.8;
+  padding: 0;
+  margin: 0;
+}
+
+h4 {
+  font-family: "Muli", sans-serif;
+  font-weight: 400;
+  margin: 0px;
+  line-height: 1.5;
+  color: ;
+}
+
+h4 {
+  font-size: 1.4em;
+}
+
+/*----------------------------------------------
+Card
+------------------------------------------------*/
+.iq-card {
+  background: var(--iq-white);
+  /* -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px; */
+  margin-bottom: 30px;
+  border: none;
+  -webkit-box-shadow: 0px 0px 12px 0px rgba(120, 146, 141, 0.06);
+  box-shadow: 0px 0px 12px 0px rgba(120, 146, 141, 0.06);
+}
+.iq-card-transparent {
+  background: transparent;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+.iq-card-body {
+  padding: 20px;
+}
+.iq-card .iq-card-header {
+  padding: 0 20px;
+  min-height: 60px;
+  -ms-flex-align: center !important;
+  align-items: center !important;
+}
+.iq-card .iq-card-header .iq-header-title {
+  display: inline-block;
+  align-self: center !important;
+}
+.iq-card .iq-card-header .iq-header-title .card-title {
+  margin-bottom: 0;
+  font-size: 20px;
+  float: left;
+  font-weight: 530;
+}
+.iq-card-header-toolbar .nav-item a {
+  color: #2953a4;
+  padding: 4px 12px;
+  font-size: 14px;
+  font-family: "Nunito", sans-serif;
+}
+.iq-card-header-toolbar .dropdown-toggle i {
+  font-size: 22px;
+  line-height: normal;
+  color: #2953a4;
+}
+.iq-card-header-toolbar .dropdown-toggle::after {
+  display: none;
+}
+/*----------------------------------------------
+Input
+------------------------------------------------*/
+.rounded {
+  border-radius: 15px;
+}
+.rounded-circle {
+  border-radius: 50% !important;
+}
+label {
+  color: #3f414d;
+}
+.form-control {
+  height: 45px;
+  line-height: 45px;
+  background: transparent;
+  border: 1px solid var(--iq-dark-border);
+  font-size: 14px;
+  color: var(--iq-secondary);
+  border-radius: 10px;
+}
+.form-control:focus {
+  color: #2953a4;
+  border-color: #2953a4;
+  box-shadow: none;
+}
+.btn-primary {
+  background: #2953a4;
+  padding: 0.5rem 2rem;
+  border-color: #2953a4;
+}
+.btn-primary:hover {
+  background: #2953a4;
+  border-color: #2953a4;
+}
+.form-control-sm {
+  height: 30px;
+  line-height: 30px;
+}
+.form-control-lg {
+  height: 50px;
+  line-height: 50px;
+}
+
+.form-group .btn-outline-primary {
+  padding: 0.5rem 2rem;
+  border-color: #2953a4;
+  color: #2953a4;
+}
+.form-group .btn-outline-primary:hover {
+  background: #2953a4;
+}
