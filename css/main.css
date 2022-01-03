@@ -1,0 +1,298 @@
+/* =============================================
+			Theme Global Elements				
+============================================= */
+
+.jf-sectionspace {
+  padding: 60px 0;
+  margin-top: 100px;
+}
+
+/* ======================================================
+					Empolyer List Style				
+======================================================== */
+.jf-employerlist .jf-widget {
+  padding: 0;
+  text-align: left;
+}
+.jf-angrycreativelist {
+  width: 100%;
+  float: left;
+  padding: 9px;
+}
+.jf-employerlist .jf-widget .jf-angrycreative {
+  margin: 0;
+  width: 80px;
+  float: left;
+  height: 80px;
+  margin: 0 10px 0 0;
+}
+.jf-employerlist .jf-widget .jf-employerdetails {
+  float: none;
+  width: auto;
+  padding: 9px 0;
+  overflow: hidden;
+}
+.jf-employerlist .jf-widget .jf-employerdetails h4 {
+  display: inline-block;
+}
+.jf-employerlist .jf-widget .jf-employerdetails .jf-addlike {
+  margin: 0 6px 0 0;
+  width: auto;
+  float: right;
+}
+.jf-employerlist .jf-widget .jf-professionalinfo li a {
+  color: #55acee;
+  display: inline-block;
+  vertical-align: middle;
+}
+/* ======================================================
+				Job Details Style				
+======================================================== */
+.jf-jobapplycenter {
+  float: left;
+  width: 100%;
+  padding: 20px;
+  margin: 0 0 20px;
+  border-radius: 5px;
+  border: 1px solid #eff2f5;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.15);
+}
+.jf-jobapplycenter .jf-companyimg {
+  width: 200px;
+  height: 200px;
+  border: 4px solid black;
+  border-radius: 50%;
+}
+.jf-jobapplycenter .jf-companycontent {
+  padding: 0;
+  position: relative;
+}
+.jf-jobapplydetails {
+  width: 60%;
+  float: left;
+}
+.jf-jobapplycenter .jf-companycontent .jf-btnjobtag {
+  line-height: 30px;
+  font-size: 12px;
+}
+.jf-jobapplycenter .jf-companycontent .jf-tagfeature {
+  font-size: 12px;
+  line-height: 28px;
+  margin: 0 0 0 10px;
+}
+.jf-jobapplycenter .jf-companycontent .jf-socialiconssimple span {
+  float: left;
+}
+.jf-jobapplycentervtwo {
+  margin: 0 0 10px;
+}
+.jf-jobapplycentervtwo .jf-jobapplydetails .jf-companyname {
+  padding: 12px 0;
+}
+.jf-jobapplycentervtwo .jf-companyimg {
+  margin: 0 20px 0 0;
+}
+.jf-jobapplycenter .jf-companyname h3 {
+  font-size: 24px;
+  line-height: 24px;
+}
+.jf-postarticlemetavthree {
+  width: 100%;
+  float: left;
+  font-size: 13px;
+  list-style: none;
+  margin: 13px 0 0;
+  line-height: 13px;
+}
+.jf-postarticlemetavthree li {
+  width: auto;
+  float: left;
+  padding: 0 6px;
+  text-align: center;
+  line-height: inherit;
+  list-style-type: none;
+}
+.jf-postarticlemetavthree li:first-child {
+  padding-left: 0;
+}
+.jf-postarticlemetavthree li a {
+  display: block;
+}
+.jf-postarticlemetavthree li i,
+.jf-postarticlemetavthree li span {
+  color: #767676;
+  font-size: inherit;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 13px !important;
+}
+.jf-postarticlemetavthree li span + span {
+  position: relative;
+  padding: 0 0 0 5px;
+}
+.jf-postarticlemetavthree li span + span:before {
+  top: 50%;
+  left: 0;
+  content: ",";
+  font-size: 13px;
+  line-height: 14px;
+  margin: -7px 0 0;
+  position: absolute;
+}
+.jf-postarticlemetavthree li:hover span,
+.jf-postarticlemetavthree li:last-child span {
+  color: #55acee;
+}
+.jf-postarticlemetavthree li i {
+  margin: 0 3px 0 0;
+}
+.jf-jobapplybtnlike {
+  padding: 0;
+  width: auto;
+  float: right;
+  text-align: right;
+}
+.jf-likebtnbox {
+  overflow: hidden;
+}
+.jf-jobapplybtnlike .jf-btnlike {
+  padding: 0;
+  width: 50px;
+  float: right;
+  height: 50px;
+  line-height: 50px;
+  margin: 0 20px 0 0;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #dfdfdf;
+}
+.jf-jobapplybtnlike .jf-btn {
+  border: 0;
+  float: right;
+  padding: 0 45px;
+  font-size: 14px;
+  line-height: 50px;
+}
+.jf-jobapplycenter .jf-companycontent .jf-socialiconssimple {
+  width: auto;
+  clear: both;
+  float: right;
+  margin: 20px 0 0;
+}
+.jf-jobapplycenter .jf-companyname span {
+  font-size: 14px;
+  line-height: 19px;
+}
+.jf-jobdetails {
+  float: left;
+  width: 100%;
+  border: 1px solid #eff2f5;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+}
+.jf-jobdetaildescription {
+  width: 100%;
+  float: left;
+  padding: 20px;
+}
+.jf-jobdetails .jf-title {
+  width: 100%;
+  float: left;
+}
+.jf-jobdetails .jf-title h2 {
+  margin: 0;
+  color: #324b6e;
+  margin: 0 0 14px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+}
+.jf-jobdescription {
+  width: 100%;
+  float: left;
+}
+
+/* ======================================================
+			Candidates Details Style				
+======================================================== */
+
+.jf-candidatesdetails {
+  float: left;
+  width: 100%;
+  margin: -150px 0 0;
+}
+.jf-candidatesprofile {
+  float: left;
+  width: 100%;
+}
+.jf-jobapplycentervthree {
+  padding: 20px;
+  margin: 0 0 10px;
+  background: #fff;
+  box-shadow: none;
+  border: 1px solid #eff2f5;
+}
+.jf-jobapplycentervthree .jf-companyimg {
+  margin: 0 20px 0 0;
+}
+.jf-jobapplycentervthree .jf-companyimg img {
+  width: 100%;
+}
+.jf-jobapplycentervthree .jf-companycontent {
+  padding: 14px 0 0;
+}
+.jf-jobapplycentervthree .jf-jobapplybtnlike .jf-btn {
+  float: none;
+}
+.jf-jobapplycentervthree .jf-jobapplybtnlike .jf-btn {
+  padding: 0 30px;
+}
+.jf-shortlist {
+  color: #55acee;
+  font-size: 14px;
+  line-height: 14px;
+  margin: 0 10px 0 25px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.jf-addsvthree {
+  margin: 0;
+  padding: 10px 0;
+}
+.jf-experience {
+  padding: 20px 20px 13px;
+}
+.jf-candidatebg {
+  float: left;
+  width: 100%;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #eff2f5;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+}
+.jf-candidatebg .jf-title h2 {
+  margin: 0 0 16px;
+  font-size: 20px;
+  line-height: 18px;
+  font-weight: 500;
+}
+.jf-candidatebg .jf-title i {
+  float: left;
+  font-size: 20px;
+  line-height: 18px;
+  margin: -3px 10px 0 0;
+}
+.jf-introduction .jf-description p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 24px;
+}
+.jf-introduction .jf-description p + p {
+  margin: 25px 0 0;
+}
+.jf-candidateinfo {
+  padding: 0;
+}

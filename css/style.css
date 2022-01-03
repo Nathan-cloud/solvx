@@ -886,7 +886,22 @@ td {
 .btn-details:visited {
   color: #43baff;
 }
+.ml-10{
+  margin-left: 12em;
+}
+.mr-n10{
+  margin-right:12em ;
+}
+.mr-10{
+  margin-right:12em ;
+}
+.ml-8{
+  margin-left: 8em;
+}
 
+.mt-8{
+  margin-top: 8em;
+}
 input[type="text"],
 input[type="email"],
 input[type="url"],
@@ -4749,6 +4764,9 @@ object {
 /* .ot-accordions .acc-item .acc-toggle:hover {
   color: #43baff;
 } */
+.acc-toggle .btn-outline-primary{
+  padding: 5px 43px;
+}
 .ot-accordions .acc-item .acc-content {
   display: none;
   padding: 20px 20px;
