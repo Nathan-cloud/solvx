@@ -1,100 +1,111 @@
-/* 
-Superio | Just another HTML Template
+.steps {
+  padding-left: 0;
+  list-style: none;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  line-height: 1;
+  margin: 30px auto;
+  border-radius: 3px;
+}
+.steps li:nth-child(1) {
+  background: #407bff96;
+}
 
-Template Name: Superio
-Author: Creative Layers
-Version: 1.0.0
+.steps li:nth-child(2) {
+  background: #407bff;
+}
 
-/************ TABLE OF CONTENTS ***************
-1. Fonts
-2. Reset
-3. Global
-4. Content Elements 
-5. Main Header / Two / Three / Four / Five
-6. Sticky Header
-7. Mobile Header
-8. Login Popup
-9. Page Title
-10. Section Title
-11. Banner Section / One to Ten
-12. Work Section
-13. Job Categories
-14. Job Section / Two / Three / Four / Five / Six
-15. Job Detail Section / Style two
-16. Features Section
-17. Testimonial Section / Two / Three / Four
-18. Clients Section / Two
-19. About Section / Two / Three
-20. Fun Fact Section
-21. Recruiter Section 
-22. Jobseeker Section
-23. Candidates Section / Two
-24. Candidate Detail Section
-25. Listing Section 
-26. Listing Show More
-27. Listing Pagination
-28. Listing Section Two / Three / Four
-29. Listing Maps
-30. Top Companies
-31. Ads Section
-32. Registeration Banners
-33. News Section / Two / Three
-34. Blog Grid
-35. Blog Single
-36. Products Section
-37. Shop Single
-38. Product Tabs
-39. Cart Section
-40. CheckOut Page
-41. Order Slip
-42. App Section
-43. Pricing Section
-44. Process Section
-45. steps Section
-46. Call To Action / Two / Three / Four
-47. Browse Jobs
-48. Subscribe Section / Two
-49. Faqs Section
-50. TNC Section
-51. Map Section
-52. Contact Section
-53. Login Section
-54. Invoice Section
-55. Main Footer / Two / Three / Four / Five / Six
-56. Dashboard
-57. User Sidebar
-58. Chat Widget
-**********************************************/
+.steps strong {
+  font-size: 14px;
+  display: block;
+  line-height: 1.4;
+}
 
-/*** 
+.steps > li {
+  position: relative;
+  display: block;
+  /* border: 1px solid #ddd; */
+  padding: 14px 50px 8px 50px;
+  width: 160px;
+  height: 60px;
+}
 
-====================================================================
-Fonts
-====================================================================
+@media (min-width: 768px) {
+  .steps > li {
+    float: left;
+  }
+  .steps .past {
+    color: #666;
+    background: #ececec;
+  }
+  .steps .present {
+    color: #000;
+  }
+  .steps .future {
+    color: #777;
+    background: #efefef;
+  }
 
-***/
+  .steps li > span:after,
+  .steps li > span:before {
+    content: "";
+    display: block;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: solid transparent;
+    border-left-color: #f0f0f0;
+    border-width: 30px;
+  }
 
-@import url("flaticon.css");
-@import url("fontawesome-all.css");
-@import url("animate.css");
-@import url("owl.css");
-@import url("jquery-ui.min.css");
-@import url("select2.min.css");
-@import url("jquery.modal.min.css");
-@import url("chosen.css");
-@import url("line-awesome.css");
-@import url("mmenu.css");
-@import url("jquery.fancybox.min.css");
+  .steps li > span:after {
+    top: -5px;
+    z-index: 1;
+    border-left-color: white;
+    border-width: 34px;
+  }
 
-@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap");
+  .steps li > span:before {
+    z-index: 2;
+  }
 
-/*** 
+  .steps li.past + li > span:before {
+    border-left-color: #407bff96;
+  }
+  .steps li.present + li > span:before {
+    border-left-color: #407bff;
+  }
+  .steps li.future + li > span:before {
+    border-left-color: #407bff;
+  }
 
-====================================================================
-Reset
-====================================================================
+  .steps li:first-child > span:after,
+  .steps li:first-child > span:before {
+    display: none;
+  }
 
-***/
+  /* Arrows at start and end */
+  .steps li:first-child i,
+  .steps li:last-child i {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: solid transparent;
+    border-left-color: white;
+    border-width: 30px;
+  }
+
+  .steps li:last-child i {
+    left: auto;
+    right: -30px;
+    border-left-color: transparent;
+    border-top-color: white;
+    border-bottom-color: white;
+  }
+}
 
 /*** 
 ======================

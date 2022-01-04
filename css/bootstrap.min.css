@@ -392,6 +392,11 @@ small {
   font-size: 80%;
   font-weight: 400;
 }
+.thin {
+  font-size: 15px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
 .small-big {
   font-size: 20px;
   color: #000;
