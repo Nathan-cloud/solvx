@@ -54,3 +54,74 @@
 /*****************************/
 /* Moving Line */
 /*****************************/
+.main-content {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.box {
+  margin-bottom: 25px;
+  border-radius: 5px;
+  background: #fff;
+  overflow: hidden;
+  box-shadow: 0 5px 30px -5px rgba(0, 0, 0, 0.16);
+  display: flex;
+}
+
+.box--primary {
+  background: #007bff;
+  color: #fff;
+}
+
+.box--success {
+  background: #4caf50;
+  color: #fff;
+}
+
+.box--warning {
+  background: #ff9800;
+  color: #fff;
+}
+
+.helper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  height: 230px;
+  left: -20px;
+}
+@media (max-width: 900px) {
+}
+
+@media (max-width: 767px) {
+  .helper {
+    flex-wrap: wrap;
+  }
+}
+
+.helper__content {
+  padding: 10px;
+}
+
+@media (min-width: 768px) {
+  .helper__content {
+    margin-left: 225px;
+  }
+}
+
+@media (max-width: 767px) {
+  .helper__content {
+    margin-bottom: 155px;
+  }
+}
+
+.helper__img img {
+  width: 150px;
+  max-height: 150px;
+  object-fit: contain;
+  position: absolute;
+  right: 0;
+  bottom: 50px;
+  left: 45px;
+}
