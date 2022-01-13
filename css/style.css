@@ -5602,11 +5602,11 @@ object {
 }
 .ot-tabs .tab-link:hover,
 .ot-tabs .tab-link:focus {
-  background: #2953a4;
+  /* background: #2953a4; */
   color: #fff;
 }
-.ot-tabs .tab-link.current,
-.ot-tabs .tab-link:hover {
+.ot-tabs .tab-link.current
+ {
   background: #2953a4;
   color: #fff;
 }
