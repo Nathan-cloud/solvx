@@ -902,10 +902,20 @@ td {
 .mt-8{
   margin-top: 8em;
 }
-
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
 input[type="search"],
-
-
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
 input[type="color"],
 textarea {
   color: #b5b5b5;
@@ -5602,11 +5612,11 @@ object {
 }
 .ot-tabs .tab-link:hover,
 .ot-tabs .tab-link:focus {
-  /* background: #2953a4; */
+  background: #2953a4;
   color: #fff;
 }
-.ot-tabs .tab-link.current
- {
+.ot-tabs .tab-link.current,
+.ot-tabs .tab-link:hover {
   background: #2953a4;
   color: #fff;
 }

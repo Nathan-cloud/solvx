@@ -196,8 +196,6 @@
   top: 100px;
 }
 
-#testimonials-slider-pager .pager-one .pager-item:nth-child(3) {
-}
 #testimonials-slider-pager .pager-one .pager-item:nth-child(4) {
   position: relative;
   top: 50px;
@@ -216,7 +214,7 @@
   transition: all 0.4s ease;
 }
 
-#testimonials-slider-pager .pager-one .pager-item.active img .owl-item.active {
+#testimonials-slider-pager .pager-one .pager-item.active {
   border: 4px solid #3b71e8;
   border-radius: 50%;
 }
