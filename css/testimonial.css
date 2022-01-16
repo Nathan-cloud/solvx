@@ -237,6 +237,7 @@
   position: relative;
   font-size: 20px;
   top: 5px;
+  text-align: center;
 }
 
 a.bx-next {
