@@ -4887,6 +4887,7 @@ object {
 }
 .ot-counter span.num {
   padding-left: 20px;
+  color: #3d3d3d;
 }
 .ot-counter h6 {
   font-family: "Nunito Sans", sans-serif;
@@ -5901,7 +5902,7 @@ div.swiper-pagination-custom,
 }
 .text-white span,
 .text-white h2 {
-  color: #fff;
+  color: #3d3d3d;
 }
 
 /* Background */
@@ -6168,24 +6169,23 @@ div.tp-bullet:hover {
   background-size: cover;
 }
 .misc-box-bg1 {
-  background: rgb(227 230 227 / 42%);
+  background: rgb(230 230 230);
 }
 .misc-box-bg2 {
-  background: rgb(227 230 227 / 42%);
+  background: rgb(230 230 230);
   margin-right: 80px;
 }
 .misc-box h5 {
-  color: #fff;
+  color: #3d3d3d;
   font-size: 22px;
   line-height: 30px;
   margin-bottom: 5px;
-  position: relative;
-  top: -15px;
+  margin-top: -15px;
 }
 .misc-box .ot-counter {
   margin: 0 0 0 -20px;
   padding: 45px 0 14px 0;
-  color: #fff;
+  color: #3d3d3d;
 }
 .misc-box p {
   margin-bottom: 0;
@@ -6857,8 +6857,16 @@ div.tp-bullet:hover {
 }
 .about-v5 {
   background-color: #211f3b;
-  background-image: url(images/background/bg-art-5.png);
+  background-image: url("../images/background/Group 79.png");
   background-repeat: no-repeat;
+  background-size: cover;
+  padding: 130px 0 120px 0;
+}
+.about-white {
+  background-color: #e5e5e5;
+
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 130px 0 120px 0;
 }
 .overlay-image-about5 {
@@ -6892,11 +6900,11 @@ div.tp-bullet:hover {
   color: #fff;
   margin-bottom: 25px;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.86;
 }
 .right-v5 {
-  margin: 0 -50px 0 -23px;
+  margin: 0 0px 56px;
 }
 .tech-wrap {
   display: flex;
@@ -7092,10 +7100,10 @@ svg:not(:root) {
   padding-bottom: 115px;
 }
 .pabout-left {
-  margin: 0 -50px 0 -55px;
+  margin: 0 0px 56px;
 }
 .pabout-right {
-  margin-left: 70px;
+  margin-left: 10px;
 }
 .pabout-right .ot-heading {
   margin-top: 20px;
@@ -7105,7 +7113,7 @@ svg:not(:root) {
   color: #8e88b8;
 }
 .pabout-right h2 {
-  color: #fff;
+  color: #000;
 }
 .pabout-right h5 {
   color: #fff;
@@ -7115,7 +7123,7 @@ svg:not(:root) {
   margin-bottom: 15px;
 }
 .pabout-right p {
-  color: #fff;
+  color: #000;
   margin-bottom: 25px;
   font-weight: 500;
   font-size: 16px;
@@ -7454,9 +7462,11 @@ svg:not(:root) {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("images/background/bg1-service1.jpg");
+  background: transparent;
   background-size: cover;
   background-repeat: no-repeat;
+  border: 5px solid white;
+  border-radius: 5px;
 }
 .mobile-app {
   background-image: url(images/background/bg-art-1.png);
@@ -7551,8 +7561,6 @@ svg:not(:root) {
   min-width: 300px;
 }
 /* Footer */
-@media (max-width: 368px) {
-}
 .footer-v1 {
   background-color: #f0f0f0;
   padding: 115px 0 50px 0;
@@ -7668,6 +7676,7 @@ svg:not(:root) {
 }
 .bg-map-dots {
   background-image: url(images/background/bg-maps-dots.jpg);
+  margin-bottom: 200px;
 }
 
 /* HTML */
@@ -7855,21 +7864,13 @@ section {
     padding-bottom: 60px;
   }
 }
-@media (max-width: 467px) {
-  .bg-map-dots {
-    margin-bottom: 200px;
-    z-index: 11111;
-    padding-bottom: 63rem;
-    position: relative;
-    left: -30px;
-  }
-}
 @media (max-width: 767px) {
   .xs-pb-60 {
     padding-bottom: 60px;
   }
-  .bg-map-dots {
-    margin-bottom: 200px;
+  .pager-two {
+    position: relative;
+    left: 30px;
   }
 }
 @media (max-width: 1400px) {
@@ -7929,9 +7930,9 @@ section {
 }
 @media (max-width: 1024px) {
   .about-v5,
+  .about-white,
   .overlay-image-about5,
   .team-info {
-    background-size: 0 auto;
   }
 }
 @media (max-width: 992px) {
@@ -7948,12 +7949,14 @@ section {
   .md-mb-30 {
     margin-bottom: 30px;
   }
-  .right-v5 {
+  .right-v5,
+  .left-v5 {
     margin-right: 0;
     margin-left: 0;
     margin-top: 50px;
     text-align: center;
   }
+
   .home2-top-right {
     text-align: center;
   }
@@ -8017,7 +8020,8 @@ section {
   .sm-mb-30 {
     margin-bottom: 30px;
   }
-  .about-v5 {
+  .about-v5,
+  .about-white {
     padding: 90px 0;
   }
   .technology-v5 {
