@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
     <title>SOLVIT AFRICA</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,14 +28,10 @@
     />
     <!-- REVOLUTION NAVIGATION STYLE -->
     <link rel="stylesheet" href="css/listing.css" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="plugins/revolution/revolution/css/navigation.css"
-    />
+  
   </head>
 
-  <body class="">
+  <body class="royal_preloader">
     <div id="page" class="site">
       <header id="site-header" class="site-header sticky-header header-static">
         <!-- Main Header start -->
@@ -760,59 +762,45 @@
 		</div><!-- modal-dialog -->
 	</div><!-- modal -->
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/boot.js"></script>
-    <script src="js/jquery.isotope.min.js"></script>
-    <script src="js/jquery-ui.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/easypiechart.min.js"></script>
-    <script src="js/jquery.countdown.min.js"></script>
-    <script src="js/appear.js"></script>
-    <script src="js/scripts.js"></script>
-    <script src="js/header-mobile.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.5/jquery.bxslider.min.js"></script>
-    <!-- REVOLUTION SLIDER SCRIPT FILES -->
-    <script src="js/rev-script-2.js"></script>
-    <script src="js/royal_preloader.min.js"></script>
-    <script>
-      window.jQuery = window.$ = jQuery;  
-      (function($) { "use strict";
-          //Preloader
-          Royal_Preloader.config({
-              mode           : 'logo',
-              logo           : 'images/logo.png',
-              logo_size      : [160, 75],
-              showProgress   : true,
-              showPercentage : true,
-              text_colour: '#000000',
-              background:  '#ffffff'
-          });
-      })(jQuery);
-  </script> 
-
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/boot.js"></script>
+  <script src="js/jquery.isotope.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/easypiechart.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/scripts.js"></script>
+  <script src="js/header-mobile.js"></script>
+  <!-- REVOLUTION JS FILES -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.5/jquery.bxslider.min.js"></script>
 
   
-    <script>
-      (function ($) {
-        function thmbxSlider() {
-          if ($(".testimonials-slider").length) {
-            $(".testimonials-slider").bxSlider({
-              // adaptiveHeight: true,
-              auto: true,
-              controls: true,
-              pause: 5000,
-              speed: 500,
-              pager: true,
-              pagerCustom: ".pager-one, .pager-two",
-            });
-          }
-        }
+  </script> -->
+  <script src="plugins/revolution/revolution/js/jquery.themepunch.tools.min.js"></script>
+  <script src="plugins/revolution/revolution/js/jquery.themepunch.revolution.min.js"></script>
 
-        $(window).on("load", function () {
-          thmbxSlider();
+  <script src="plugins/revolution/revolution/js/extensions/revolution-plugin.js"></script>
+
+  <!-- REVOLUTION SLIDER SCRIPT FILES -->
+  <script src="js/rev-script-2.js"></script>
+  <script src="js/royal_preloader.min.js"></script>
+  <script>
+    window.jQuery = window.$ = jQuery;  
+    (function($) { "use strict";
+        //Preloader
+        Royal_Preloader.config({
+            mode           : 'logo',
+            logo           : 'images/logo.png',
+            logo_size      : [160, 75],
+            showProgress   : true,
+            showPercentage : true,
+            text_colour: '#000000',
+            background:  '#ffffff'
         });
-      })(jQuery);
-    </script>
+    })(jQuery);
+</script> 
+  
+   
   </body>
 </html>
