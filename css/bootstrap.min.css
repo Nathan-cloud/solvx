@@ -166,6 +166,9 @@ a:not([href]):not([tabindex]):hover {
 a:not([href]):not([tabindex]):focus {
   outline: 0;
 }
+.bg-white-grey {
+  background: #e5e5e5 !important;
+}
 code,
 kbd,
 pre,
@@ -419,6 +422,9 @@ mark {
 }
 .list-inline-item:not(:last-child) {
   margin-right: 0.5rem;
+}
+.text-transform {
+  text-transform: uppercase;
 }
 .initialism {
   font-size: 90%;
@@ -824,7 +830,6 @@ pre code {
     flex: 0 0 41.666667%;
     max-width: 41.666667%;
   }
- 
   .col-sm-6 {
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;

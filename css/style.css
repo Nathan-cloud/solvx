@@ -6877,11 +6877,10 @@ div.tp-bullet:hover {
 }
 .about-v5 {
   background-color: #211f3b;
-  background-image: url("../images/background/Group 79.png");
+  background-image: url("../images/Group 159.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 130px 0 120px 0;
-  z-index: -9;
 }
 .about-white {
   background-color: #f5f5f5;
@@ -7697,6 +7696,7 @@ svg:not(:root) {
 }
 .bg-map-dots {
   background-image: url(images/background/bg-maps-dots.jpg);
+  margin-bottom: 100px;
 }
 
 /* HTML */

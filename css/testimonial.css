@@ -222,7 +222,6 @@
 .pager-two {
   margin-left: 50px;
   margin-top: 30px;
-
   border-radius: 5px;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   padding: 20px 40px 40px 40px;
@@ -237,7 +236,6 @@
   position: relative;
   font-size: 20px;
   top: 5px;
-  text-align: center;
 }
 
 a.bx-next {
