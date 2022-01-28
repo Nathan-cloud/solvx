@@ -367,7 +367,7 @@ h5 {
 }
 
 h6 {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: bold;
 }
 
@@ -867,7 +867,7 @@ td {
 .btn-details {
   font-size: 14px;
   font-weight: bold;
-  color: #43baff;
+  color: #b6b6b6;
 }
 .btn-details i {
   margin-right: 8px;
@@ -3223,7 +3223,7 @@ a:active {
   margin-left: -10px;
 }
 .search-form .search-field {
-  width: 100%;
+  width: 90%;
   padding: 0 66px 0 80px;
   height: 46px;
   background-color: #fff;
@@ -4668,10 +4668,14 @@ object {
   .border-right .box-style2:before {
     display: none;
   }
+  .ot-accordions .acc-item {
+    width: 500px;
+  }
 }
 .ot-accordions .acc-item {
   margin-bottom: 20px;
   background: #fff;
+  width: 869px;
 }
 .ot-accordions .acc-item .acc-toggle {
   cursor: pointer;

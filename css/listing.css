@@ -146,6 +146,12 @@ h4 {
 /*----------------------------------------------
 Card
 ------------------------------------------------*/
+.card-header {
+  background: #fff;
+}
+.card {
+  margin-bottom: 20px;
+}
 .iq-card {
   background: var(--iq-white);
   /* -webkit-border-radius: 15px;

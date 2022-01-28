@@ -220,13 +220,52 @@
 }
 
 .pager-two {
-  margin-left: 50px;
-  margin-top: 30px;
-  border-radius: 5px;
-  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-  padding: 20px 40px 40px 40px;
+  padding: 50px 20px 35px 20px;
+  background: #fff;
+  text-align: center;
+  box-shadow: 0 0 115px 19px rgba(236, 236, 236, 1);
 }
-
+.pager-two .first p {
+  font-size: 14px;
+  color: #777;
+  line-height: 26px;
+  text-indent: 30px;
+  position: relative;
+}
+@media only screen and (max-width: 986px) {
+  .pager-two {
+    width: 100%;
+  }
+  .pager-two .first p {
+    width: 100%;
+  }
+  .pager-two .first h3 {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 786px) {
+  .bg-map-dots {
+    position: relative;
+    right: 27px;
+  }
+  .pager-two {
+    width: 100%;
+  }
+  .pager-two .first p {
+    width: 100%;
+  }
+  .pager-two .first h3 {
+    width: 100%;
+  }
+  .footer-v1 {
+    margin-top: 330px;
+  }
+}
+@media only screen and (max-width: 686px) {
+  .footer-v1 {
+    margin-top: 730px;
+  }
+}
 #testimonials-slider-pager .pager-two .pager-item.active {
   opacity: 1;
   transform: translate(-50%, -50%) scale(0.95);
