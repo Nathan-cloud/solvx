@@ -258,15 +258,8 @@
   .pager-two .first h3 {
     width: 100%;
   }
-  .footer-v1 {
-    margin-top: 330px;
-  }
 }
-@media only screen and (max-width: 686px) {
-  .footer-v1 {
-    margin-top: 730px;
-  }
-}
+
 #testimonials-slider-pager .pager-two .pager-item.active {
   opacity: 1;
   transform: translate(-50%, -50%) scale(0.95);

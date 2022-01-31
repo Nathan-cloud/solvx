@@ -3586,14 +3586,14 @@ object {
   color: #00deff;
 }
 .icon-box-s2.s2 {
-  padding: 20px 5px 20px 5px;
+  padding: 25px 10px;
   position: relative;
   overflow: hidden;
-  background-color: #fafafa;
-  height: 220px;
+  border-radius: 7px;
+  background-color: white;
 }
 .icon-box-s2.s2:hover {
-  border-bottom: 2px solid #00deff;
+  background-color: white;
 }
 .icon-box-s2.s2 * {
   transition: all 0.2s linear;
@@ -3603,11 +3603,9 @@ object {
   -ms-transition: all 0.2s linear;
 }
 .icon-box-s2.s2 .icon-main {
-  color: #2853a4;
+  color: #7141b1;
   margin-bottom: 30px;
   line-height: 1;
-  position: relative;
-  top: 20px;
 }
 .icon-box-s2.s2 .icon-main i,
 .icon-box-s2.s2 .icon-main span:before {
@@ -3634,6 +3632,12 @@ object {
   -ms-transition: all 0.3s linear;
 }
 
+.icon-box-s2.s2:hover {
+  background: #fff !important;
+  box-shadow: 15px 15px 38px 0 rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 15px 15px 38px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 15px 15px 38px 0 rgba(0, 0, 0, 0.1);
+}
 .icon-box-s2.s2:hover:before {
   width: 100%;
   opacity: 1;
@@ -3644,20 +3648,8 @@ object {
   height: 30px;
 }
 .icon-box-s2.s2 .content-box h5 {
-  margin-top: 60px;
-  position: relative;
-  top: 20px;
-  padding-bottom: 30px;
+  margin-bottom: 14px;
 }
-.icon-box-s2.s3 .icon-main {
-  float: right;
-}
-.icon-box-s2.s3 .content-box {
-  text-align: right;
-  padding-left: 0;
-  padding-right: 75px;
-}
-
 .tech-box {
   display: block;
   color: #fff;
@@ -4668,14 +4660,10 @@ object {
   .border-right .box-style2:before {
     display: none;
   }
-  .ot-accordions .acc-item {
-    width: 500px;
-  }
 }
 .ot-accordions .acc-item {
   margin-bottom: 20px;
   background: #fff;
-  width: 869px;
 }
 .ot-accordions .acc-item .acc-toggle {
   cursor: pointer;
