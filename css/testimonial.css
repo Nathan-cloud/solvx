@@ -247,6 +247,7 @@
   .bg-map-dots {
     position: relative;
     right: 27px;
+    bottom: 200px;
   }
   .pager-two {
     width: 100%;

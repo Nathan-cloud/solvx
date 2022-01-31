@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="css/Flaticon-dd.css">
   </head>
 
-  <body class="">
+  <body  class="royal_preloader">
     <div id="page" class="site">
       <header id="site-header" class="site-header sticky-header header-static">
         <!-- Main Header start -->
@@ -475,71 +475,24 @@
       </div>
     </footer>
     <!-- #site-footer -->
-    	<!-- Modal -->
-	<div class="modal right fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content">
-
-				<div class="modal-header" style="background:transparent; border: none;">
-					<button type="button" class="close float-left" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="fa fa-2x">&times;</span></button>
-				
-				</div>
-				<div class="modal-body">
-          <div class="formbg">
-            <div class="formbg-inner padding-horizontal--48">
-              <i>Save Your time while you are applying</i>
-              <span class="padding-bottom--15 mb-5 text-center">Apply with SOLVIT PROFILE</span>
-              <form id="stripe-login">
-                <div class="field padding-bottom--24">
-                  <label for="Name">Name</label>
-                  <input type="text" name="Name">
-                </div>
-                <div class="field padding-bottom--24">
-                  <label for="email">Email</label>
-                  <input type="email" name="email">
-                </div>
-
-                <div class="field padding-bottom--24">
-                  <div class="grid--50-50">
-                    <label for="Addition">Addition Details</label>
-                   
-                  </div>
-                  <input type="file" name="cv">
-                </div>
-
-                <div class="field padding-bottom--24">
-                  <div class="grid--50-50">
-                    <label for="Addition">Addition Details</label>
-                   
-                  </div>
-                  <input type="text" name="Details">
-                </div>
-             
-                <div class="field padding-bottom--24">
-                  <input type="submit" name="submit" value="Continue">
-                </div>
-              
-              </form>
-            </div>
-          </div>
-				</div>
-
-			</div><!-- modal-content -->
-		</div><!-- modal-dialog -->
-	</div><!-- modal -->
 
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/boot.js"></script>
     <script src="js/jquery.isotope.min.js"></script>
-    <script src="js/jquery-ui.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/easypiechart.min.js"></script>
     <script src="js/jquery.countdown.min.js"></script>
-    <script src="js/appear.js"></script>
     <script src="js/scripts.js"></script>
     <script src="js/header-mobile.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.5/jquery.bxslider.min.js"></script>
+    <!-- REVOLUTION JS FILES -->
+    <script src="js/jquery.bxslider.min.js"></script>
+
+
+    <script src="plugins/revolution/revolution/js/jquery.themepunch.tools.min.js"></script>
+    <script src="plugins/revolution/revolution/js/jquery.themepunch.revolution.min.js"></script>
+
+    <script src="plugins/revolution/revolution/js/extensions/revolution-plugin.js"></script>
+
     <!-- REVOLUTION SLIDER SCRIPT FILES -->
     <script src="js/rev-script-2.js"></script>
     <script src="js/royal_preloader.min.js"></script>
@@ -558,29 +511,5 @@
           });
       })(jQuery);
   </script> 
-
-
-  
-    <script>
-      (function ($) {
-        function thmbxSlider() {
-          if ($(".testimonials-slider").length) {
-            $(".testimonials-slider").bxSlider({
-              // adaptiveHeight: true,
-              auto: true,
-              controls: true,
-              pause: 5000,
-              speed: 500,
-              pager: true,
-              pagerCustom: ".pager-one, .pager-two",
-            });
-          }
-        }
-
-        $(window).on("load", function () {
-          thmbxSlider();
-        });
-      })(jQuery);
-    </script>
   </body>
 </html>

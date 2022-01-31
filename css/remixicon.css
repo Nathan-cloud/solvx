@@ -1754,3 +1754,68 @@
 .ri-zoom-out-fill:before { content: "\f0ac"; }
 .ri-zoom-out-line:before { content: "\f0ad"; }
 
+
+.icon-box-s2.s2 {
+  padding: 20px 5px 20px 5px;
+  position: relative;
+  overflow: hidden;
+  background-color: #fafafa;
+  height: 220px;
+}
+.icon-box-s2.s2:hover {
+  border-bottom: 2px solid #00deff;
+}
+.icon-box-s2.s2 * {
+  transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+}
+.icon-box-s2.s2 .icon-main {
+  color: #2853a4;
+  margin-bottom: 30px;
+  line-height: 1;
+  position: relative;
+  top: 20px;
+}
+.icon-box-s2.s2 .icon-main i,
+.icon-box-s2.s2 .icon-main span:before {
+  font-size: 40px;
+  line-height: 1;
+}
+.icon-box-s2.s2 .icon-main img {
+  max-width: 150px;
+  margin-top: 5px;
+}
+.icon-box-s2.s2:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+}
+
+.icon-box-s2.s2:hover:before {
+  width: 100%;
+  opacity: 1;
+}
+.icon-box-s2.s2:hover:after {
+  opacity: 1;
+  width: 30px;
+  height: 30px;
+}
+.icon-box-s2.s2 .content-box h5 {
+  margin-top: 60px;
+  position: relative;
+  top: 20px;
+  padding-bottom: 30px;
+}
